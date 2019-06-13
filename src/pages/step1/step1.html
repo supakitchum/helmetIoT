@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Step {{step}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-card>
+        <ion-card-content text-left>
+          <ion-row>
+            <ion-col col-12>
+              Please move position to
+            </ion-col>
+            <ion-col col-4 text-center>
+              <ion-card class="bg-btn">
+                <ion-card-header>
+                  X
+                </ion-card-header>
+                <ion-card-content>
+                  {{x}}
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col col-4 text-center>
+              <ion-card class="bg-btn">
+                <ion-card-header>
+                  Y
+                </ion-card-header>
+                <ion-card-content>
+                  {{y}}
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col col-4 text-center>
+              <ion-card class="bg-btn">
+                <ion-card-header>
+                  Z
+                </ion-card-header>
+                <ion-card-content>
+                  {{z}}
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col col-12>
+              Your position is
+            </ion-col>
+            <ion-col col-4 text-center>
+              <ion-card class="bg-btn" id="cardX">
+                <ion-card-header>
+                  X
+                </ion-card-header>
+                <ion-card-content id="x">
+                  0
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col col-4 text-center>
+              <ion-card class="bg-btn" id="cardY">
+                <ion-card-header>
+                  Y
+                </ion-card-header>
+                <ion-card-content id="y">
+                  0
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col col-4 text-center>
+              <ion-card class="bg-btn" id="cardZ">
+                <ion-card-header>
+                  Z
+                </ion-card-header>
+                <ion-card-content id="z">
+                  0
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col col-12 id="btnProcess">
+              <button ion-button style="width: 100%">Process ...</button>
+            </ion-col>
+            <ion-col col-12 class="hide" id="btnNext">
+              <button ion-button style="width: 100%" (click)="nextStep()">NEXT</button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+</ion-content>
